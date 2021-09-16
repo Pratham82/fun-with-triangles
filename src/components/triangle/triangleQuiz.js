@@ -27,6 +27,36 @@ export const TriangleQuiz = () => {
       'B. 180 degrees',
       'C. 360 degrees',
     ],
+    '6. A triangle with one angle greater than 90 degrees.': [
+      'A. equilateral triangle',
+      'B. obtuse triangle',
+      'C. acute triangle',
+      'D.isosceles triangle',
+    ],
+    '7. A triangle with all three angles less than 90 degrees.': [
+      'A. equilateral triangle',
+      'B. obtuse triangle',
+      'C. acute triangle',
+      'D. isosceles triangle',
+    ],
+    '8. A triangle having at least two equal sides.': [
+      'A. acute triangle',
+      'B. isosceles triangle',
+      'C. equilateral triangle',
+      'D. obtuse triangle',
+    ],
+    '9. A triangle with one angle equal to 90 degrees.': [
+      'A. right triangle;',
+      'B. equilateral triangle;',
+      'C. acute triangle;',
+      'D. obtuse triangle;',
+    ],
+    '10. A triangle having three equal sides.': [
+      'A. acute triangle',
+      'B. obtuse triangle',
+      'C. right triangle',
+      'D. equilateral triangle',
+    ],
   }
   const correctAnswers = [
     'B. Right',
@@ -34,6 +64,11 @@ export const TriangleQuiz = () => {
     'C. Equilateral',
     'B. 2 congruent sides',
     'B. 180 degrees',
+    'B. obtuse triangle',
+    'C. acute triangle',
+    'B. isosceles triangle',
+    'A. right triangle;',
+    'D. equilateral triangle',
   ]
   // console.log(selected)
 
