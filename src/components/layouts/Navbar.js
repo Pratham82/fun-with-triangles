@@ -8,7 +8,11 @@ export const Navbar = () => {
   return (
     <div className="navContainer">
       <div>
-        <h1 className="navHeader">Fun With Triangles 📐 </h1>
+        <h1 className="navHeader">
+          <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
+            Fun With Triangles 📐
+          </Link>
+        </h1>
         <ul id="nav">
           <li className={pathname === '/' ? 'activeNav' : ''}>
             <Link to="/">Triangle Quiz</Link>
