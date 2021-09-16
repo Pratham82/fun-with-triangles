@@ -86,7 +86,7 @@ export const TriangleQuiz = () => {
       <h1>Triangle QUIZ</h1>
       {Object.entries(questions).map(([question, answers], questionIndex) => (
         <div className="questionsContainer">
-          <form style={{ textAlign: 'left', margin: '0 50px' }}>
+          <form style={{ textAlign: 'center', margin: '0 50px' }}>
             <p>{question}</p>
             {answers.map((answer) => (
               <React.Fragment>
