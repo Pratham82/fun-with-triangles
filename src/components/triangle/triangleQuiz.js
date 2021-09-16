@@ -85,22 +85,24 @@ export const TriangleQuiz = () => {
     <div className="App">
       <h1>Triangle QUIZ</h1>
       {Object.entries(questions).map(([question, answers], questionIndex) => (
-        <form style={{ textAlign: 'left', margin: '0 50px' }}>
-          <p>{question}</p>
-          {answers.map((answer) => (
-            <React.Fragment>
-              <input
-                type="radio"
-                value={answer}
-                name="ans"
-                onChange={(e) => handleSelect(e, questionIndex)}
-              />
-              &nbsp;
-              <label htmlFor={answer}>{answer}</label> &nbsp;
-              <br />
-            </React.Fragment>
-          ))}
-        </form>
+        <div className="questionsContainer">
+          <form style={{ textAlign: 'left', margin: '0 50px' }}>
+            <p>{question}</p>
+            {answers.map((answer) => (
+              <React.Fragment>
+                <input
+                  type="radio"
+                  value={answer}
+                  name="ans"
+                  onChange={(e) => handleSelect(e, questionIndex)}
+                />
+                &nbsp;
+                <label htmlFor={answer}>{answer}</label> &nbsp;
+                <br />
+              </React.Fragment>
+            ))}
+          </form>
+        </div>
       ))}
       <h2 className="res">{message}</h2>
       <h3 className="res">{score}</h3>

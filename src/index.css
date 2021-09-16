@@ -144,3 +144,15 @@ nav {
 .activeNav {
   border-bottom: 1px solid white;
 }
+
+.questionsContainer {
+  display: flex;
+  justify-content: left;
+  padding-left: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .questionsContainer {
+    padding: 0;
+  }
+}
