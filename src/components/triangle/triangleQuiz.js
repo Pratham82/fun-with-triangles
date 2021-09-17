@@ -70,7 +70,6 @@ export const TriangleQuiz = () => {
     'A. right triangle;',
     'D. equilateral triangle',
   ]
-  // console.log(selected)
 
   let responses = []
   let responsesObj = {}
@@ -81,13 +80,8 @@ export const TriangleQuiz = () => {
     const {
       target: { value },
     } = e
-    console.log(value)
-    // setSelected(e.target.value)
 
     // Get the question index
-    console.log(questionIndex)
-
-    console.log(value === correctAnswers[questionIndex])
     const isCorrect = value === correctAnswers[questionIndex]
 
     responses.push({
